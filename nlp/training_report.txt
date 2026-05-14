@@ -1,0 +1,48 @@
+JEC Buddy - Training Report
+============================================================
+
+Total samples  : 931
+Total intents  : 33
+CV Accuracy    : 72.8% (+/- 3.2%)
+
+Classification Report (on training data):
+------------------------------------------------------------
+                                 precision    recall  f1-score   support
+
+              admission_process       1.00      1.00      1.00        25
+                    campus_life       0.98      0.95      0.96        42
+                college_history       0.84      1.00      0.91        37
+                   contact_info       1.00      0.97      0.99        37
+             department_ai_info       1.00      1.00      1.00        19
+          department_civil_info       1.00      1.00      1.00        25
+            department_cse_info       1.00      1.00      1.00        17
+            department_ece_info       1.00      1.00      1.00        16
+             department_ee_info       1.00      1.00      1.00        26
+             department_ip_info       1.00      1.00      1.00        27
+             department_it_info       0.90      0.73      0.81        26
+     department_mechanical_info       1.00      0.96      0.98        26
+   department_mechatronics_info       1.00      1.00      1.00        26
+                    departments       0.89      0.89      0.89        18
+                    eligibility       1.00      1.00      1.00        20
+employer_placement_registration       1.00      0.83      0.91        24
+                       farewell       1.00      0.97      0.99        38
+                 fees_structure       1.00      1.00      1.00        25
+                       greeting       0.95      0.98      0.96        41
+                     grievances       1.00      1.00      1.00        27
+                    hostel_info       0.96      1.00      0.98        25
+                           iqac       1.00      1.00      1.00        25
+                      jec_media       0.97      1.00      0.99        35
+                   library_info       1.00      1.00      1.00        22
+                  location_info       0.97      0.97      0.97        36
+                           nirf       1.00      1.00      1.00        23
+                     nptel_mooc       0.96      1.00      0.98        26
+              placement_general       0.97      1.00      0.98        32
+           placement_recruiters       0.90      0.97      0.93        36
+            research_innovation       1.00      0.92      0.96        26
+            sports_achievements       1.00      1.00      1.00        32
+              sports_facilities       1.00      1.00      1.00        41
+                 student_corner       1.00      1.00      1.00        30
+
+                       accuracy                           0.98       931
+                      macro avg       0.98      0.97      0.98       931
+                   weighted avg       0.98      0.98      0.97       931
