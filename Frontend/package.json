@@ -1,7 +1,8 @@
 {
-  "name": "jec-buddy-backend",
+  "name": "jec-buddy-frontend",
   "version": "1.0.0",
-  "description": "JEC Buddy Chatbot Backend - Express + MongoDB + Python ML",
+  "type": "module",
+  "description": "JEC Buddy Chatbot Frontend - React + Vite",
   
   "scripts": {
     "dev": "vite",
@@ -16,13 +17,13 @@
     "express": "^4.22.1",
     "mongoose": "^8.23.0",
     "openai": "^6.33.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "nodemon": "^3.1.14",
-    "vite": "^7.1.0"
+    "vite": "^5.2.0"
   }
 }
