@@ -36,15 +36,18 @@ app.use("/api/chat", chatRoutes);
 
 console.log("Routes Loaded");
 
+app.use(express.static(path.join(__dirname, "../Frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
+});
+
 // Root Route (Add this for testing)
 
 // Health check
 app.get("/health", (_req, res) =>
   res.json({ status: "ok", timestamp: new Date() })
 );
-app.get("/", (req, res) => {
-  res.send("🚀 JEC Buddy Backend Running");
-});
 
 // GET /api/intents — return available intent tags
 app.get("/api/intents", (req, res) => {
