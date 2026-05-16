@@ -72,8 +72,8 @@ app.use((err, _req, res, _next) => {
 });
 
 // ── Start ────────────────────────────────────────────────────
-app.listen(PORT, "127.0.0.1", () => {
-  console.log(`\n🚀 JEC Buddy backend running on http://127.0.0.1:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`\n🚀 JEC Buddy backend running on http://0.0.0.0:${PORT}`);
   console.log(`POST   /api/chat/message`);
   console.log(`GET    /api/chat/history/:sessionId`);
   console.log(`DELETE /api/chat/history/:sessionId\n`);
