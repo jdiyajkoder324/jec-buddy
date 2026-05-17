@@ -34,16 +34,6 @@ app.use(express.urlencoded({ extended: false }));
 // ── Routes ───────────────────────────────────────────────────
 app.use("/api/chat", chatRoutes);
 
-console.log("Routes Loaded");
-
-app.use(express.static(path.join(__dirname, "../Frontend/dist")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
-});
-
-// Root Route (Add this for testing)
-
 // Health check
 app.get("/health", (_req, res) =>
   res.json({ status: "ok", timestamp: new Date() })
@@ -62,6 +52,18 @@ app.get("/api/intents", (req, res) => {
     res.status(500).json({ error: "Error reading intents." });
   }
 });
+
+console.log("Routes Loaded");
+
+app.use(express.static(path.join(__dirname, "../Frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
+});
+
+// Root Route (Add this for testing)
+
+
 
 // 404 handler
 app.use((_req, res) =>
