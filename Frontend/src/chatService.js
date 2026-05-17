@@ -1,4 +1,4 @@
-const API_URL = "http://jec-buddy.onrender.com/api/chat/message";
+const API_URL = "https://jec-buddy.onrender.com/api/chat";
 
 export const sendMessage = async (message, sessionId) => {
   const res = await fetch(`${API_URL}/message`, {
