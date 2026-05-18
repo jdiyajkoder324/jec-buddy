@@ -20,7 +20,8 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
 
 app.use(
   cors({
-    origin: function (origin, callback) { callback(null, true); },
+    origin: function (origin, callback) { callback(null, true);
+    },
     methods: ["GET", "POST", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
     credentials: true
@@ -54,13 +55,13 @@ app.get("/api/intents", (req, res) => {
 });
 
 console.log("Routes Loaded");
-
+/*
 app.use(express.static(path.join(__dirname, "../Frontend/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
 });
-
+*/
 // Root Route (Add this for testing)
 
 
